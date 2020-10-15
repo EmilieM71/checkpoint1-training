@@ -5,7 +5,7 @@
  */
 
 function addItemsPosition(strArray) {
-
+  return strArray.map((item, index) => index + 1 +". " + item);
 }
 
 
@@ -15,6 +15,7 @@ function addItemsPosition(strArray) {
 console.log(
   addItemsPosition(['apple', 'kiwi', 'pear'])
 ); // doit afficher [ '1. apple', '2. kiwi', '3. pear' ]
+
 console.log(
   addItemsPosition(['cat', 'koala', 'bear', 'lion'])
 ); // doit afficher [ '1. cat', '2. koala', '3. bear', '4. lion' ]

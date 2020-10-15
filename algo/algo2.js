@@ -4,6 +4,12 @@
 
 function isEven(num) {
   // ton code ici
+  return ((num % 2 === 0) ? true : false)
+  // if (num % 2 === 0) {
+  //   return true
+  // } else {
+  //   return false
+  // }
 }
 
 
