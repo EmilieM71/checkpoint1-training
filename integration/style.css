@@ -1,3 +1,76 @@
+
+
 section {
   padding: 3em 0;
+  /* centrer section dans la page */
+  margin: 0 auto;
+  /* largeur max 48em */
+  max-width: 48em;
+}
+
+.styleHeader {
+  /* Ajout espace au-dessus et au-dessous */
+  padding: 5px 0;
+  /* centrer le texte */
+  text-align: center;
+  /* Ajouter une image de fond */
+  background-image: url("https://designshack.net/wp-content/uploads/black-texture-background.jpg");
+  /* Texte en couleur claire */
+  color: #f7f0f0;
+}
+
+.navbar ul{ 
+  list-style: none; /* supp puce */
+}
+
+.navbar ul {
+  /* Aligner les items */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar ul li a:hover {
+  /* couleur liens change quand on les survole */
+  background-color: #414141;
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1em 0;
+  padding: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/***********************************************************
+-  Media Query
+***********************************************************/
+
+/* Small devices (480px and up) */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+}
+
+/* Medium devices (480px and 991px)  */
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .card {
+    width: 42%;
+  }
+}
+
+/* Large devices (992px and up)  */
+@media screen and (min-width: 992px) {
+  .card {
+    width: 28%;
+  }
 }
